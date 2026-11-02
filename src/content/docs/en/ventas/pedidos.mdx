@@ -1,0 +1,42 @@
+---
+title: Orders
+description: "Review your store's orders, change their status and send courier tracking."
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Under **Sales and customers → Orders** you see all the orders generated from your store's cart.
+
+<Aside type="note">
+This guide has no screenshot yet: the one we have shows real customer data. One with demo data will be added.
+</Aside>
+
+## What each order shows
+
+Each order is a card with:
+
+- The customer's name and the **total**.
+- The date, the number of products and the **tracking code** (`PED-…`).
+- The detail of **products**, **shipping** and the customer's data (phone and email).
+- The **document** (receipt or invoice) and the **delivery** (pickup or home delivery, with its address and notes).
+
+## Change the status
+
+On the right of each order there is a status selector (for example, **Completed**). When you change it, the customer can see the new status on their order tracking page and in their account.
+
+You can also **delete** the order with the red button.
+
+## Courier tracking
+
+When you ship, the **Courier tracking** block lets you send the link to the customer:
+
+1. In **Tracking URL (without the number)** paste the courier's address, without the tracking number at the end.
+2. In **Tracking no.** type the number the courier gave you.
+3. Click **Save tracking**.
+4. Click **Send tracking email** to let the customer know.
+
+The two parts are joined to form the link the customer gets in the email and sees on their order page.
+
+<Aside type="tip">
+You can customize the text of the tracking email under **Email → Settings**.
+</Aside>

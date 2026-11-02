@@ -1,0 +1,38 @@
+---
+title: Formularios
+description: "Revisa lo que tus visitantes envían desde los formularios de tu sitio."
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Cada formulario que pones en tus páginas (reservas, solicitud de demo, contacto) deja sus respuestas en **Ventas y clientes → Formularios**.
+
+<Aside type="note">
+Esta guía aún no tiene pantallazo: el que tenemos muestra datos de contacto reales. Se agregará uno con datos de demostración.
+</Aside>
+
+## Qué verás
+
+Cada envío es una tarjeta con:
+
+- El **nombre del formulario** (por ejemplo, «Formulario de reserva» o «Solicitud de demo») y la fecha y hora en que llegó.
+- Los **campos** que completó la persona: hora, fecha, nombre, servicio, teléfono, etc.
+- Una etiqueta **WhatsApp** cuando el envío llegó por ese canal.
+- Un selector de estado y el botón **Eliminar**.
+
+## Estados
+
+Cambia el estado con el selector de cada envío:
+
+| Estado | Para qué |
+|---|---|
+| **Nuevo** | Todavía no lo has revisado. |
+| **Leído** | Ya lo viste. |
+
+## Filtrar
+
+Arriba a la derecha, el selector **Todos los formularios** te deja ver solo los de un formulario en particular.
+
+## Cómo crear un formulario
+
+Los formularios se agregan como **módulos** en una página con el [Editor visual](/contenido/editor-visual/): elige **Formulario** o **Formulario con CPA** en **Agregar módulo**. Los formularios de tipo reserva también aparecen en el [Calendario](/sistema/calendario/).

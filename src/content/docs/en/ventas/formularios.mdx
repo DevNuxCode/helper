@@ -1,0 +1,38 @@
+---
+title: Forms
+description: "Review what your visitors send from your site's forms."
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Every form you put on your pages (bookings, demo request, contact) leaves its responses under **Sales and customers → Forms**.
+
+<Aside type="note">
+This guide has no screenshot yet: the one we have shows real contact data. One with demo data will be added.
+</Aside>
+
+## What you will see
+
+Each submission is a card with:
+
+- The **form name** (for example, "Booking form" or "Demo request") and the date and time it arrived.
+- The **fields** the person filled in: time, date, name, service, phone, etc.
+- A **WhatsApp** label when the submission came through that channel.
+- A status selector and the **Delete** button.
+
+## Statuses
+
+Change the status with each submission's selector:
+
+| Status | What for |
+|---|---|
+| **New** | You have not reviewed it yet. |
+| **Read** | You have seen it. |
+
+## Filter
+
+At the top right, the **All forms** selector lets you see only the submissions of one particular form.
+
+## How to create a form
+
+Forms are added as **modules** on a page with the [Visual editor](/en/contenido/editor-visual/): choose **Form** or **Form with CPA** in **Add module**. Booking-type forms also appear in the [Calendar](/en/sistema/calendario/).

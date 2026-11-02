@@ -1,0 +1,45 @@
+---
+title: Clientes
+description: "Tu lista de clientes (CRM): datos, historial y notas internas."
+---
+
+import { Aside, Steps } from '@astrojs/starlight/components';
+
+**Ventas y clientes → Clientes** es un pequeño CRM: los datos de contacto de cada cliente, su historial de pedidos, formularios y tickets, y tus notas internas.
+
+<Aside type="note">
+Esta guía aún no tiene pantallazos: los que tenemos muestran datos de clientes reales. Se agregarán con datos de demostración.
+</Aside>
+
+## La lista
+
+- Las pestañas **Activos** y **Eliminados** muestran cuántos clientes hay en cada grupo.
+- El buscador filtra por **nombre, correo o teléfono**.
+- Cada cliente muestra cuántos **pedidos**, **formularios** y **tickets** tiene. Pulsa su fila para abrir su ficha.
+
+## Añadir un cliente
+
+<Steps>
+
+1. Pulsa **Añadir cliente**.
+2. Completa **Correo**, **Nombre completo**, **Teléfono** y **Dirección**.
+3. Pulsa **Crear cliente**.
+
+</Steps>
+
+Se agrega al CRM del sitio y respeta el límite de clientes de tu [plan](/primeros-pasos/planes-y-limites/).
+
+## La ficha del cliente
+
+Al abrir un cliente verás:
+
+- **Datos del cliente:** nombre, correo, teléfono, URL de avatar y dirección, más la fecha desde la que es cliente. Cambia lo que necesites y pulsa **Guardar**.
+- **Notas internas:** escribe una nota y pulsa **Agregar nota**. **Solo las ve el equipo administrador**; el cliente nunca tiene acceso.
+
+## Quitar un cliente
+
+El botón **Quitar cliente** bloquea su acceso al portal y lo saca de tu lista de activos, pero **conserva su cuenta y todo su historial** (pedidos, formularios, tickets y notas). Puedes restaurarlo cuando quieras desde la pestaña **Eliminados**, con su historial tal como estaba.
+
+## Registro de clientes
+
+Tus clientes pueden crear su propia cuenta en tu sitio: ver [Portal del cliente](/ventas/portal-del-cliente/). Si prefieres que solo tú crees las cuentas, desactiva el registro en [Configuración → Clientes](/sistema/configuracion/).

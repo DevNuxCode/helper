@@ -1,0 +1,42 @@
+---
+title: Pedidos
+description: Revisa los pedidos de tu tienda, cambia su estado y envía el seguimiento del courier.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+En **Ventas y clientes → Pedidos** ves todos los pedidos generados desde el carrito de tu tienda.
+
+<Aside type="note">
+Esta guía aún no tiene pantallazo: el que tenemos muestra datos reales de un cliente. Se agregará uno con datos de demostración.
+</Aside>
+
+## Qué muestra cada pedido
+
+Cada pedido es una tarjeta con:
+
+- El nombre del cliente y el **total**.
+- La fecha, la cantidad de productos y el **código de seguimiento** (`PED-…`).
+- El detalle de **productos**, el **envío** y los datos del cliente (teléfono y correo).
+- El **documento** (boleta o factura) y el **despacho** (retiro o despacho a domicilio, con su dirección y notas).
+
+## Cambiar el estado
+
+A la derecha de cada pedido hay un selector de estado (por ejemplo, **Completado**). Al cambiarlo, el cliente puede ver el nuevo estado en la página de seguimiento de su pedido y en su cuenta.
+
+También puedes **eliminar** el pedido con el botón rojo.
+
+## Seguimiento del courier
+
+Cuando despachas, el bloque **Seguimiento del courier** te deja enviar el enlace al cliente:
+
+1. En **URL de seguimiento (sin el número)** pega la dirección del courier, sin el número de seguimiento al final.
+2. En **N.º de seguimiento** escribe el número que te dio el courier.
+3. Pulsa **Guardar seguimiento**.
+4. Pulsa **Enviar correo de seguimiento** para avisarle al cliente.
+
+Las dos partes se unen para formar el enlace que el cliente recibe en el correo y ve en la página de su pedido.
+
+<Aside type="tip">
+Puedes personalizar el texto del correo de seguimiento en **Correo → Settings**.
+</Aside>
